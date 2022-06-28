@@ -29,16 +29,24 @@ body{
 #container{
     display: flex;
     justify-content: center;
-    gap: 15;
+    gap: 1%;
 }
 
-div[i~="pokemon-"]{
-    height: 100px;
-    width: 100px;
-    border: 1px solid #ccc;
-}
-
-#roster{
+#roster {
     display: flex;
     justify-content: center;
+
+}
+
+div[i^="pokemon-"]{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ccc
+}
+
+.roster-img{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
 }
