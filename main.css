@@ -12,6 +12,7 @@ body{
     border-radius: 20px;
     background-color: #fff;
     transition: transform 0.5s;
+    animation: flash 1s;
 }
 
 .pokemon-card:hover{
@@ -49,4 +50,13 @@ div[i^="pokemon-"]{
     width: 300px;
     margin: 0 auto;
     display: block;
+}
+@keyframes flash {
+    0% {background-color: blue}
+    50% {background-color: magenta}
+    100% {background-color: white}
+}
+
+.pokemon-card-flash{
+    animation: flash 1s;
 }
